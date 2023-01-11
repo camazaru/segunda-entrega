@@ -55,32 +55,9 @@ estudiantesArray: Estudiante[] = [
     }
 ]
 
-selectedEstudiantes: Estudiante = new Estudiante()
-  estudiantesArray: any;
 
- openOrEdit(estudiantes: Estudiante){
-  this.selectedEstudiantes= estudiantes;
  
-}
 
-addOrEdit() {
-if(this.selectedEstudiantes.id === 0){
-this.selectedEstudiantes.id = this.estudiantesArray.length +1;
-this.estudiantesArray.push(this.selectedEstudiantes);
-
-}
-
-this.selectedEstudiantes = new Estudiante();
-}
-
-
-delete(){
-if(confirm("Estas seguro de querer eliminarlo??")){
- this.estudiantesArray = this.estudiantesArray.filter(x => x != this.selectedEstudiantes);
- this.selectedEstudiantes = new Estudiante();
-}
-
-}
 
 
 }
