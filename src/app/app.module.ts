@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BodyComponent } from './shared/components/body/body.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
-import { HeadComponent } from './shared/components/head/head.component';
-import { LateralComponent } from './shared/components/lateral/lateral.component';
+import { BodyComponent } from './layout/components/body/body.component';
+import { FooterComponent } from './layout/components/footer/footer.component';
+import { HeadComponent } from './layout/components/head/head.component';
+import { LateralComponent } from './layout/components/lateral/lateral.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
 import { LoginComponent } from '../app/auth/pages/login/login.component';
