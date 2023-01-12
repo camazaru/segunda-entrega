@@ -2,13 +2,32 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LayoutRoutingModule } from './layout-routing.module';
+import { BodyComponent } from '../layout/components/body/body.component';
+import { FooterComponent } from '../layout/components/footer/footer.component';
+import { LateralComponent } from '../layout/components/lateral/lateral.component';
+import { HeadComponent } from '../layout/components/head/head.component';
+import { MaterialModule } from '../shared/material/material.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    BodyComponent,
+    FooterComponent,
+    LateralComponent,
+    HeadComponent
+  ],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    MaterialModule
+  ],
+  exports: [
+    BodyComponent,
+    FooterComponent,
+    LateralComponent,
+    HeadComponent
+
+
   ]
 })
 export class LayoutModule { }

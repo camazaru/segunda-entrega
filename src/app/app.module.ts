@@ -1,12 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BodyComponent } from './layout/components/body/body.component';
-import { FooterComponent } from './layout/components/footer/footer.component';
-import { HeadComponent } from './layout/components/head/head.component';
-import { LateralComponent } from './layout/components/lateral/lateral.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
 import { LoginComponent } from '../app/auth/pages/login/login.component';
@@ -18,14 +13,12 @@ import { HomeComponent } from './estudiantes/pages/home/home.component';
 import { ListadoComponent } from './estudiantes/pages/listado/listado.component';
 import { ImagenPipe } from './estudiantes/pipes/imagen.pipe';
 import { EstudianteComponent } from './estudiantes/pages/estudiante/estudiante.component';
+import { LayoutModule } from './layout/layout.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    BodyComponent,
-    FooterComponent,
-    HeadComponent,
-    LateralComponent,
     LoginComponent,
     RegistroComponent,
     EstudiantesTarjetaComponent,
@@ -34,15 +27,22 @@ import { EstudianteComponent } from './estudiantes/pages/estudiante/estudiante.c
     HomeComponent,
     ListadoComponent,
     ImagenPipe,
-    EstudianteComponent
+    EstudianteComponent,
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    LayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+   
+
+  ]
 })
 export class AppModule { }
