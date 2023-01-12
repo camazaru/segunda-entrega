@@ -15,6 +15,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -31,7 +32,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatIconModule,
     MatProgressSpinnerModule,
     MatSidenavModule,
-    MatToolbarModule,
+    MatToolbarModule
   
     
   ]

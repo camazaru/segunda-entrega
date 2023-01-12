@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { LayoutRoutingModule } from './layout-routing.module';
-import { BodyComponent } from '../layout/components/body/body.component';
-import { FooterComponent } from '../layout/components/footer/footer.component';
-import { LateralComponent } from '../layout/components/lateral/lateral.component';
-import { HeadComponent } from '../layout/components/head/head.component';
+import { BodyComponent } from './components/body/body.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LateralComponent } from './components/lateral/lateral.component';
+import { HeadComponent } from './components/head/head.component';
 import { MaterialModule } from '../shared/material/material.module';
 
 
@@ -15,18 +14,20 @@ import { MaterialModule } from '../shared/material/material.module';
     FooterComponent,
     LateralComponent,
     HeadComponent
+    
   ],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     MaterialModule
+
+   
   ],
   exports: [
-    BodyComponent,
-    FooterComponent,
-    LateralComponent,
-    HeadComponent
-
+ BodyComponent,
+FooterComponent,
+LateralComponent,
+HeadComponent
 
   ]
 })
