@@ -9,11 +9,12 @@ import { ErrorComponent } from './error/error.component';
 import { AuthModule } from 'src/app/auth/auth.module';
 
 
+
+
 @NgModule({
   declarations: [
-    AgregarComponent,
+   AgregarComponent,
   BuscarComponent,
-
 HomeComponent,
 ListadoComponent,
 ModificarComponent,
@@ -22,7 +23,8 @@ ErrorComponent,
 ],
   imports: [
     CommonModule,
-    AuthModule
+    AuthModule,
+   
   ], exports:[
     AgregarComponent,
     BuscarComponent,

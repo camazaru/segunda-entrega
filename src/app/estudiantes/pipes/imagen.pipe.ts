@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Estudiante } from '../interfaces/estudiante.interface';
+import { Estudiante } from '../interfaces/estudiantes.interface';
 
 @Pipe({
   name: 'imagen'
