@@ -7,6 +7,10 @@ import { ListadoComponent } from './listado/listado.component';
 import { ModificarComponent } from './modificar/modificar.component';
 import { ErrorComponent } from './error/error.component';
 import { AuthModule } from 'src/app/auth/auth.module';
+import estudiantesMock from '../../shared/jsonMockeado/estudiantesMock.json'
+import { InterEstudiantes } from '../interfaces/estudiantes.interface';
+import { MaterialModule } from '../../../app/shared/material/material.module'
+
 
 
 
@@ -24,6 +28,7 @@ ErrorComponent,
   imports: [
     CommonModule,
     AuthModule,
+    MaterialModule
    
   ], exports:[
     AgregarComponent,
@@ -33,4 +38,12 @@ ErrorComponent,
   ListadoComponent,
   ]
 })
-export class PagesModule { }
+export class PagesModule {
+
+  
+estudiantes:InterEstudiantes[] = estudiantesMock;
+
+
+  
+
+ }

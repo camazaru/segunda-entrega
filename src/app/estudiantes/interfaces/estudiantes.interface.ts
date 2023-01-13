@@ -9,5 +9,5 @@ export interface InterEstudiantes {
     gendre: String;
     rol: String;
     img: String;
-    cursos: Array<any>
+    cursos: any
 }

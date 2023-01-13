@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import estudiantesMock from '../../../shared/jsonMockeado/estudiantesMock.json'
+import { InterEstudiantes } from '../../interfaces/estudiantes.interface';
+
+
 
 @Component({
   selector: 'app-listado',
@@ -7,9 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoComponent implements OnInit {
 
-  constructor() { }
+  imgprueba:string="../../../shared/estudiantes/paisaje.jpg"
+
+
+estudiantes: any = estudiantesMock
+
+
+
+  constructor() { 
+
+    
+  }
 
   ngOnInit(): void {
+  
   }
+
+  
+  
 
 }
